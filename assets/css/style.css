@@ -1,0 +1,969 @@
+@font-face {
+    font-family: acumin;
+    src: url("../fonts/Acumin\ Variable\ Concept.ttf");
+}
+body{
+   background :#020926;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #020926;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader .ld {
+    width: 15vw;
+    animation: fadeInDown 2s infinite;
+    animation-direction: alternate;
+}
+
+html{
+    font-family: acumin;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.text-center{
+    text-align: center;
+}
+h1{
+    color: #F0E6E1;
+    font-size: 4vw;
+    font-weight: 700;
+    line-height: 3.5vw;
+    text-transform: uppercase;
+}
+h2{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.70);
+    font-size: 2.2vw;
+    font-weight: 700;
+    line-height:3vw;
+    text-transform: uppercase;
+}
+h3{
+    color: #F0E6E1;
+    font-size: 1.6vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h4{
+    color: rgba(240, 230, 225, 0.80);
+    font-size: 1.8vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+h5 {
+    color: #F0E6E1;
+    font-size: 1.3vw;
+    font-weight: 500;
+    line-height: 3vw;
+    text-transform: uppercase;
+}
+p{
+    color: rgba(240, 230, 225, 0.80);
+    font-size: 1.2vw;
+    line-height: 2vw;
+}
+
+/* -----------------------header-------------------
+------------------------------------------------------------- */
+header{
+    width: 100%;
+    height: 10vw;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 3vw 8vw 0vw 8vw;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 6%;
+    position: absolute;
+    left: 47vw;
+    top: 2.8vw;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li{
+    margin-right: 3.5vw;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFffff;
+    transition: .4s;
+}
+header nav ul li a:hover{
+    color:#ffffffa6;
+}
+header nav ul li.special{
+    margin-left: 25vw;
+}
+header .social-icons {
+    display: flex;
+    gap:1.4vw;
+    position: relative;
+    top: -0.5vw;
+}
+header .social-icons a img{
+    width: 10vw;
+    transition: .5s;
+}
+header .social-icons a img:hover{
+    transform: translateY(-10px);
+}
+
+/* ------------------------header----------
+------------------------------------------------------ */
+.header {
+    background: url("../images/header-bg.png")no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 10vw 0;
+}
+.header .welcome {
+    width: 14%;
+    margin-top: 10vw;
+}
+.header .up-img {
+    width: 26%;
+    margin-top: 3vw;
+}
+.header h2{
+    margin-top: 4vw;
+}
+.header a .buy-now {
+    width: 23%;
+    margin-top: 3vw;
+    transition: .5s;
+}
+.header a .buy-now:hover {
+    transform: translateY(-10px);
+}
+/* ------------------------about----------
+------------------------------------------------------ */
+.about {
+    background: url("../images/about-bg.png")no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    padding:20vw 8vw;
+    margin-top: -8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .left,.about .right {
+    width: 48%;
+}
+.about .left h1 {
+    margin-bottom: .5vw;
+}
+.about .left p{
+    margin-bottom: 1.5vw;
+    padding-right: 20%;
+}
+.about .left a img {
+    width: 27%;
+    transition: .5s;
+}
+.about .left a img:hover {
+    transform: translateY(-10px);
+}
+.about .right img {
+    width: 90%;
+}
+/* ------------------- tokenomics -----------
+------------------------------------------------------------ */
+.Tokenomics{
+    padding: 20vw 0;
+    background: url("../images/token-bg.png")no-repeat;
+    background-position: top left;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    margin-top: -7vw;
+}
+.Tokenomics .Tokenomics-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 5vw;
+}
+.Tokenomics .box {
+    width: 23%;
+    border-radius: .4vw;
+    border: 1px solid #606060;
+    background: rgba(19, 28, 45, 0.70);
+    backdrop-filter: blur(19.5px);
+    padding: 10px;
+    }
+    .Tokenomics .box .sub-box {
+    border-radius: .4vw;
+    border: 1.5px solid #FFF;
+    background: radial-gradient(73.31% 73.91% at 26.53% 30.71%, rgba(83, 109, 132, 0.70) 0%, rgba(31, 49, 72, 0.70) 98.02%);
+    backdrop-filter: blur(19.5px);
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    }
+    .Tokenomics .box .sub-box  img {
+        width: 100%;
+        height: 270px;
+    }
+    .Tokenomics .box .token-text {
+    border-radius: .4vw;
+    background: #32394A;
+    padding: 10px;
+    margin-top: 10px;
+    }
+/* ----------------------- roadmap -----------------
+--------------------------------------------------------------------- */
+.roadmap {
+    padding: 10vw 0 20vw 0;
+    background:url("../images/roadmap-bg.png")no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3vw;
+    position: relative;
+    margin-top: -8vw;
+}
+.roadmap .img-1{
+    width: 30%;
+    position: absolute;
+    top:14vw;
+    left: 65vw;
+    animation:fadeInUp;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.roadmap .img-2{
+    width: 22%;
+    position: absolute;
+    top:103.6vw;
+    left: 58vw;
+}
+.roadmap .phases{
+    width: 20%;
+    margin-top: 4vw;
+    
+}
+.roadmap .roadmap-img {
+    width: 50%;
+
+}
+.roadmap h4 {
+    position: relative;
+    margin-top: -7.2vw;
+}
+.roadmap .launch {
+    left:-12vw
+}
+.roadmap .cg {
+    left: -10.3vw;
+}
+.roadmap .tgnt {
+    left: -3.5vw;
+}
+.roadmap .cm {
+    left: -12.5vw;
+}
+.roadmap .wr{
+    left: -12vw;
+}
+
+.roadmap .cg-listing {
+    left: -12vw;
+}
+.roadmap .smm {
+    left:-4vw;
+}
+.roadmap .mission {
+    left: -15vw;
+}
+.roadmap .whitepaper-release {
+    left: -10.5vw;
+}
+.roadmap .cex-listing {
+    left: -14vw;
+}
+.roadmap .partnership {
+    left: -13vw;
+}
+.roadmap .going-viral {
+    left: -14vw;
+}  
+/* -------------------how-to-buy---------
+----------------------------------------------- */
+.how-to-buy {
+    padding: 15vw 8vw;
+    background: url("../images/htb.png")no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5vw;
+}
+.how-to-buy .left, .how-to-buy .right {
+    width: 48%;
+}
+.how-to-buy .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.how-to-buy .left img {
+    width: 95%;
+}
+.how-to-buy .left a img {
+    width: 28%;
+    transition: .5s;
+}
+.how-to-buy .left a img:hover{
+    transform: translateY(-10px);
+}
+.how-to-buy .right h1 {
+    margin-bottom: 1vw;
+}
+.how-to-buy .right ul li {
+    list-style: decimal;
+    color: rgba(240, 230, 225, 0.80);
+    font-size: 1.4vw;
+    font-weight: 500;
+    line-height: 3vw;
+}
+
+/*--------------------------------- footer -------------------------
+-------------------------------------------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2vw;
+    background:url("../images/footer-bg.png")no-repeat;
+    background-position: top center;
+    background-size: 100% 40%;
+    padding: 8vw 0 0 0;
+    margin-top: -6vw;
+}
+footer .logo{
+    width: 10%;
+}
+footer .social-icons {
+    display: flex;
+    align-items: center;
+    gap:3vw;
+}
+footer .social-icons a img {
+    width: 4vw;
+    transition: .5s;
+}
+footer .social-icons a img:hover{
+    transform: translate(10px);
+}
+footer hr {
+    width: 70%;
+    height: 1px;
+    background-color:rgba(255, 255, 255, 0.15);
+    border: none;
+}
+/* -------------------1280px-------
+--------------------------------------------------------- */
+@media (max-width: 1280px){ 
+
+}
+
+/* -------------------1280px-------
+--------------------------------------------------------- */
+@media (max-width: 980px){
+    h1{
+        font-size: 6vw;
+        line-height: 6vw;
+    }
+    h2{
+        font-size: 3.5vw;
+        line-height: 4vw;
+    }
+    h3{
+        font-size: 2.5vw;
+    }
+    h4{
+        font-size: 3vw;
+    }
+    h5 {
+        font-size: 2.2vw;
+    }
+    p{
+        
+        font-size: 2.2vw;
+        line-height: 3vw;
+    }
+    .header .logo{
+        width: 10%;
+        left: 44vw;
+    }
+    header nav ul li a {
+        font-size: 1.6vw;
+    }
+    .header .welcome {
+        width: 22%;
+    }
+    header .up-img {
+        width: 35%;
+        margin-top: 6vw;
+    }
+    .Tokenomics .box {
+        width: 30%;
+    }
+    .roadmap .roadmap-img {
+        width: 70%;
+        margin-bottom: 3vw;
+    }
+    .roadmap h1{
+        margin-top: 8vw;
+    }
+    .roadmap h4{
+        top: -5.3vw;
+    }
+    .roadmap .phases{
+        width: 30%;
+    }
+    .roadmap .launch {
+        left:-13.5vw
+    }
+    .roadmap .cg {
+        left: -11.3vw;
+    }
+    .roadmap .tgnt {
+        left: -0.5vw;
+    }
+    .roadmap .cm {
+        left: -15.5vw;
+    }
+    .roadmap .wr{
+        left: -15vw;
+    }
+    
+    .roadmap .cg-listing {
+        left: -15vw;
+    }
+    .roadmap .smm {
+        left:-2vw;
+    }
+    .roadmap .mission {
+        left: -20vw;
+    }
+    .roadmap .whitepaper-release {
+        left: -12vw;
+    }
+    .roadmap .cex-listing {
+        left: -18vw;
+    }
+    .roadmap .partnership {
+        left: -17vw;
+    }
+    .roadmap .going-viral {
+        left: -18.5vw;
+    }
+    .how-to-buy {
+        margin-top: -9vw;
+    }
+    .how-to-buy .right ul li {
+        font-size: 2vw;
+        line-height: 3vw;
+    }
+    footer {
+        margin-top: -7vw;
+    }
+    footer .logo{
+        width: 15%;
+    }
+}
+
+@media (max-width:600px){
+     html{
+         font-weight: 400;
+     }
+     *{
+         margin: 0;
+         padding:0;
+         box-sizing: border-box;
+     }
+     .text-center{
+         text-align: center;
+     }
+     li{
+         line-height:2.5vw ;
+         font-size: 2.2vw;
+     }
+     li::marker {
+        font-size: 10px;
+     }
+     h1{
+         font-size: 8vw;
+         line-height: 8vw;
+     }
+     h2{
+         font-size: 3.5vw;
+         line-height: 4.5vw;
+     }
+     h3{
+         font-size: 5.5vw;
+     }
+     h4{
+         font-size: 4vw;
+     }
+     h5{
+        font-size: 4.2vw;
+        line-height: 7vw;
+     }
+     p{
+         font-size: 4vw;
+         line-height: 5vw;
+         text-align: center;
+     }
+     
+     /* -----------------------header-------------------
+     ------------------------------------------------------------- */
+     header{
+         width: 100%;
+         height: 15vw;
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+         padding: 1.7vw 0vw 0vw 0vw;
+         transition: all 1.5s;
+     }
+
+     .hd.active {
+        background: #020926;
+     }
+
+     .header .logo {
+         width: 12%;
+         position: absolute;
+         left: 44vw;
+         top: 3vw;
+     }
+
+     header .wrap {
+        background: #020926;
+        width: 100%;
+        padding: 5vw 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 13vw;
+        gap: 3vw;
+        z-index: 1000;
+        border-bottom-right-radius: 12vw;
+        border-bottom-left-radius: 12vw;
+        transition: all 1s;
+     }
+
+     .center-menu {
+        margin-top: -900px;
+     }
+
+     .center-menu.active {
+        margin-top: 0;
+     }
+
+     header nav ul {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         list-style: none;
+     }
+     header nav ul li{
+         margin-right: 0vw;
+     }
+     header nav ul li a{
+         text-decoration: none;
+         font-size: 4vw;
+         line-height: 10vw;
+         text-transform: uppercase;
+         color: #FFffff;
+         padding: 2vw 3vw 1vw 3vw;
+         border-radius: 4vw;
+         transition: all .3s;
+     
+     }
+
+     header nav ul li a:hover {
+        background: #ffffff;
+        color: #020926;
+        transform: translateY(-.4vw);
+     }
+
+     header nav ul li.special{
+         margin-left: 0vw;
+     }
+     header .social-icons {
+         display: flex;
+         gap:1.4vw;
+     }
+     header .social-icons a img{
+         width: 30vw;
+     }
+     
+     .header {
+        background: url("../images/header-bg.png")no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 10vw 0;
+    }
+    .header .welcome {
+        width: 35%;
+        margin-top: 10vw;
+    }
+    .header .up-img {
+        width: 40%;
+        margin-top: 6vw;
+    }
+    .header h2{
+        margin-top: 6vw;
+    }
+    .header a .buy-now {
+        width: 23%;
+        margin-top: 3vw;
+        transition: .5s;
+    }
+    .header a .buy-now:hover {
+        transform: translateY(-10px);
+    }
+    /* ------------------------about----------
+    ------------------------------------------------------ */
+    .about {
+        background: url("../images/about-bg.png")no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        padding:35vw 8vw;
+        margin-top: -15vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .about .left,.about .right {
+        width: 100%;
+    }
+    .about .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap:3vw;
+    }
+    .about .left h1 {
+        margin-bottom: .5vw;
+    }
+    .about .left p{
+        margin-bottom: 1.5vw;
+        padding-right: 0;
+    }
+    .about .left a img {
+        width: 27%;
+        transition: .5s;
+        text-align: center;
+    }
+    .about .left a img:hover {
+        transform: translateY(-10px);
+    }
+    .about .right img {
+        margin-top: 4vw;
+        width: 100%;
+    }
+    /* ------------------- tokenomics -----------
+    ------------------------------------------------------------ */
+    .Tokenomics{
+        padding: 20vw 0;
+        background: url("../images/token-bg.png")no-repeat;
+        background-position: top left;
+        background-size: cover;
+        position: relative;
+        z-index: -1;
+        margin-top: -7vw;
+    }
+    .Tokenomics .Tokenomics-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        margin-top: 5vw;
+    }
+    .Tokenomics .box {
+        width: 70%;
+        border-radius: .4vw;
+        border: 1px solid #606060;
+        background: rgba(19, 28, 45, 0.70);
+        backdrop-filter: blur(19.5px);
+        padding: 10px;
+        }
+        .Tokenomics .box .sub-box {
+        border-radius: .4vw;
+        border: 1.5px solid #FFF;
+        background: radial-gradient(73.31% 73.91% at 26.53% 30.71%, rgba(83, 109, 132, 0.70) 0%, rgba(31, 49, 72, 0.70) 98.02%);
+        backdrop-filter: blur(19.5px);
+        width: 100%;
+        padding: 10px 10px 0 10px;
+        }
+        .Tokenomics .box .sub-box  img {
+            width: 100%;
+            height: 300px;
+        }
+        .Tokenomics .box .token-text {
+        border-radius: .4vw;
+        background: #32394A;
+        padding: 10px;
+        margin-top: 10px;
+        }
+    /* ----------------------- roadmap -----------------
+    --------------------------------------------------------------------- */
+    .roadmap {
+        padding: 10vw 0;
+        background:url("../images/roadmap-bg.png")no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:3vw;
+        position: relative;
+        margin-top: -11vw;
+    }
+    .roadmap .img-1{
+        width: 30%;
+        position: absolute;
+        top:18vw;
+        left: 65vw;
+    }
+    .roadmap .img-2{
+        width: 22%;
+        position: absolute;
+        top:150.2vw;
+        left: 68vw;
+    }
+    .roadmap h1 {
+        margin-top: 10vw;
+    }
+    .roadmap .phases{
+        width: 35%;
+        margin-top: 4vw;
+        margin-bottom: 2vw;
+        
+    }
+    .roadmap .roadmap-img {
+        width: 90%;
+    
+    }
+    .roadmap h4 {
+        position: relative;
+        top: -6.7vw;
+    }
+    .roadmap .launch {
+        left:-18vw
+    }
+    .roadmap .cg {
+        left: -15vw;
+    }
+    .roadmap .tgnt {
+        left: -0.5vw;
+    }
+    .roadmap .cm {
+        left: -20.5vw;
+    }
+    .roadmap .wr{
+        left: -19vw;
+    }
+    
+    .roadmap .cg-listing {
+        left: -18.3vw;
+    }
+    .roadmap .smm {
+        left:-1vw;
+    }
+    .roadmap .mission {
+        left: -25vw;
+    }
+    .roadmap .whitepaper-release {
+        left: -14.5vw;
+    }
+    .roadmap .cex-listing {
+        left: -23vw;
+    }
+    .roadmap .partnership {
+        left: -20.8vw;
+    }
+    .roadmap .going-viral {
+        left: -23vw;
+    }  
+    /* -------------------how-to-buy---------
+    ----------------------------------------------- */
+    .how-to-buy {
+        padding: 15vw 8vw;
+        background: url("../images/htb.png")no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .how-to-buy .left, .how-to-buy .right {
+        width: 100%;
+    }
+    .how-to-buy .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .how-to-buy .left img {
+        width: 95%;
+        margin-bottom: 5vw;
+    }
+    .how-to-buy .left a img {
+        width: 28%;
+        transition: .5s;
+    }
+    .how-to-buy .left a img:hover{
+        transform: translateY(-10px);
+    }
+    .how-to-buy .right h1 {
+        margin-bottom: 3vw;
+        text-align: center;
+    }
+    .how-to-buy .right ul li {
+        list-style: decimal;
+        color: rgba(240, 230, 225, 0.80);
+        font-size: 3vw;
+        font-weight: 500;
+        line-height: 5vw;
+    }
+    
+    /*--------------------------------- footer -------------------------
+    -------------------------------------------*/
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:2vw;
+        background:url("../images/footer-bg.png")no-repeat;
+        background-position: top center;
+        background-size: 100% 40%;
+        padding: 20vw 0 0 0;
+        margin-top: -14vw;
+    }
+    footer .logo{
+        width: 20%;
+        margin-bottom: 3vw;
+    }
+    footer .social-icons {
+        display: flex;
+        align-items: center;
+        gap:3vw;
+    }
+    footer .social-icons a img {
+        width: 10vw;
+        transition: .5s;
+    }
+    footer .social-icons a img:hover{
+        transform: translate(10px);
+    }
+    footer hr {
+        width: 70%;
+        height: 1px;
+        background-color:rgba(255, 255, 255, 0.15);
+        border: none;
+    }
+     
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-6-24 14:56:17
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}  
